@@ -9,12 +9,19 @@ html {
 		border: #ffeb3b 25px solid;
 		border-radius: 60px;
 		padding: 5px;
+		margin-top: -20%;
 		background: #fff7b0;
 }
 
 @media (min-width: 576px) {
 	html {
 		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
 	}
 	.btn {
 		float:left;
@@ -29,12 +36,6 @@ html {
 		float:left;
 		width:30%;
 		margin-right:20%;
-	}
-}
-
-@media (min-width: 768px) {
-	html {
-		font-size: 16px;
 	}
 }
 
