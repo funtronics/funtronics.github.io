@@ -8,6 +8,10 @@ html {
 	html {
 		font-size: 14px;
 	}
+	.btn {
+		float:left;
+		width:50%;
+	}
 }
 
 @media (min-width: 768px) {
