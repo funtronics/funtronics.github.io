@@ -70,3 +70,8 @@ main > .tagline {
 	width: 2.65rem;
 	height: 2.65rem;
 }
+
+div {
+    display:flex;
+    align-items:center;
+}
