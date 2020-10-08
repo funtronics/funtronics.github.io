@@ -46,7 +46,7 @@ main {
 main > .intro {
 	/*font-family: 'Reem Kufi', sans-serif;*/
 	font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: 600;
 }
 
@@ -71,7 +71,7 @@ main > .tagline {
 	height: 2.65rem;
 }
 
-div {
+.flag {
     display:flex;
     align-items:center;
 }
