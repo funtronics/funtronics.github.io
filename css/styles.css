@@ -6,6 +6,10 @@ html {
 
 .btn, .btnl, .btnr {
 		display:block;
+		border: #ffeb3b 25px solid;
+		border-radius: 60px;
+		padding: 5px;
+		background: #fff7b0;
 }
 
 @media (min-width: 576px) {
