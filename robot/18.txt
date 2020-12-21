@@ -1,14 +1,15 @@
-int ledPin = 10; // define digital pin 10. 
-
+#include <Servo.h>
+Servo myservo;//define steering engine variable
+int servo =0;
 void setup()
 {
-  pinMode(ledPin, OUTPUT);// define pin with LED connected as output.
+ Serial.begin(9600); // 9600 bps
+ myservo.attach(9);//define steering engine interface（alternative 9 and 10 but just able to control 2interfaces）
 }
-
 void loop()
 {
-  digitalWrite(ledPin, HIGH); // set the LED on.
-  delay(1000); // wait for a second. 
-  digitalWrite(ledPin, LOW); // set the LED off. 
-  delay(1000); // wait for a second
+servo=map ( analogRead(0) , 0 , 1023 , 0 , 180 )  ;
+Serial.println(servo ,DEC);
+myservo.write(servo);//set rotating angle
+delay(50);
 }

@@ -1,14 +1,12 @@
-int ledPin = 10; // define digital pin 10. 
-
-void setup()
+int relay = 3; // relay turn-on trigger signal - active high;
+void setup ()
 {
-  pinMode(ledPin, OUTPUT);// define pin with LED connected as output.
+pinMode (relay, OUTPUT); //define port attribute for the output;
 }
-
-void loop()
+void loop ()
 {
-  digitalWrite(ledPin, HIGH); // set the LED on.
-  delay(1000); // wait for a second. 
-  digitalWrite(ledPin, LOW); // set the LED off. 
-  delay(1000); // wait for a second
+digitalWrite (relay, HIGH); // relay conducted;
+delay (1000);
+digitalWrite (relay, LOW); // relay switch;
+delay (1000);
 }

@@ -1,14 +1,9 @@
-int ledPin = 10; // define digital pin 10. 
-
-void setup()
+int buzzer=2;// initialize digital IO pin that controls the buzzer
+void setup() 
+{ 
+  pinMode(buzzer,OUTPUT);// set pin mode as “output”
+} 
+void loop() 
 {
-  pinMode(ledPin, OUTPUT);// define pin with LED connected as output.
-}
-
-void loop()
-{
-  digitalWrite(ledPin, HIGH); // set the LED on.
-  delay(1000); // wait for a second. 
-  digitalWrite(ledPin, LOW); // set the LED off. 
-  delay(1000); // wait for a second
+digitalWrite(buzzer, HIGH); // produce sound
 }

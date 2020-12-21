@@ -1,14 +1,17 @@
-int ledPin = 10; // define digital pin 10. 
-
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+LiquidCrystal_I2C lcd(0x27,16,2); // set the LCD address to 0x27 for a 16 chars and 2 line display
 void setup()
 {
-  pinMode(ledPin, OUTPUT);// define pin with LED connected as output.
+lcd.init(); // initialize the lcd
+lcd.init();
+// Print a message to the LCD.
+lcd.backlight();
+lcd.setCursor(3,0);
+lcd.print("Hello, world!");
+lcd.setCursor(2,1);
+lcd.print("keyestudio!");
 }
-
 void loop()
 {
-  digitalWrite(ledPin, HIGH); // set the LED on.
-  delay(1000); // wait for a second. 
-  digitalWrite(ledPin, LOW); // set the LED off. 
-  delay(1000); // wait for a second
 }
